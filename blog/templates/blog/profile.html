@@ -1,0 +1,10 @@
+{% extends 'blog/base.html' %}
+
+{% block profile %}
+{% if user.is_authenticated %}
+<div class="profile_box">
+    <h2>Profile</h2>
+    <p> HERE WILL BE TEXT </p>
+  </div>
+  {% endif %}
+{% endblock %}

@@ -1,17 +1,20 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
+<div class="placebox">
+    <div class="post" style="color: black;">
         {% if post.published_date %}
             <div class="date">
                 {{ post.published_date }}
             </div>
         {% endif %}
+        <h1>{{ post.title }}
         {% if user.is_authenticated %}
             <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         {% endif %}
-        <h1>{{ post.title }}</h1>
+        </h1>
         <h3>{{ post.author}}</h3>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
+  </div>
 {% endblock %}

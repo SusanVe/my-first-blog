@@ -1,7 +1,9 @@
 .page-header {
-    background-color: #ff9400;
+    background-color: #ff3b3f;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
+    margin-bottom: 0;
+
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
@@ -10,13 +12,20 @@
     text-decoration: none;
 }
 
-
 .content {
-    margin-left: 40px;
+    margin-left: 60px;
+    margin-top: 35px;
 }
 
 h1, h2, h3, h4 {
     font-family: 'Anton', sans-serif;
+}
+
+li {
+  padding: 20px 90px 20px 0px;
+  list-style-type: none;
+  color: white;
+  border-bottom: 1px solid black;
 }
 
 .date {
@@ -38,10 +47,44 @@ h1, h2, h3, h4 {
     margin-right: 20px;
 }
 
-.post {
-    margin-bottom: 70px;
+.login {
+  background-color: #EFEFEF;
+  padding: 18px;
+  margin-left: 50px;
+  margin-bottom: 40px;
 }
+
+.placebox {
+  background-color: #EFEFEF;
+  padding: 18px;
+}
+
+.post {
+    margin-bottom: 60px;
+    background-color: #EFEFEF;
+    padding: 18px;
+    color: #A9A9A9;
+}
+
+.profile_box {
+  background-color: #ff3b3f;
+  padding: 18px;
+  float: left;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
 
 .post h1 a, .post h1 a:visited {
     color: #000000;
+}
+
+body {
+  background-color: #CAEBF2;
+}
+
+.btn-default {
+  border-radius: 0;
+  background-color: white;
+  background-image: none;
 }
