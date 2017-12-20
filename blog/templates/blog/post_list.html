@@ -1,13 +1,20 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
+{% if user.is_authenticated %}
     {% for post in posts %}
         <div class="post">
             <div class="date">
                 {{ post.published_date }}
             </div>
             <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+            <h3> {{ post.author }}</h3>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
+    {% else %}
+    <a class="btn btn-default" href="/login">Log In</a>
+    <a class="btn btn-default" href="/signup">Signup</a>
+
+    {% endif %}
 {% endblock %}
