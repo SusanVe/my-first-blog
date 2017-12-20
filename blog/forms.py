@@ -7,7 +7,7 @@ class PostForm(forms.ModelForm):
 
     class Meta:
         model = Post
-        fields = ('title', 'author', 'text',)
+        fields = ('title', 'text',)
 
 class SignUpForm(UserCreationForm):
     first_name = forms.CharField(max_length=30, required=False)
