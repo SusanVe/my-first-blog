@@ -1,7 +1,7 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-<div class="placebox">
+
     <div class="post" style="color: black;">
         {% if post.published_date %}
             <div class="date">
@@ -16,5 +16,5 @@
         <h3>{{ post.author}}</h3>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
-  </div>
+
 {% endblock %}

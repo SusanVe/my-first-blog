@@ -1,3 +1,11 @@
+.title:hover{
+  text-decoration: none;
+}
+
+.jumbotron {
+  background-color: #c9e7ec;
+}
+
 .page-header {
     background-color: #ff3b3f;
     margin-top: 0;
@@ -52,6 +60,7 @@ li {
   padding: 18px;
   margin-left: 50px;
   margin-bottom: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .placebox {
@@ -64,6 +73,7 @@ li {
     background-color: #EFEFEF;
     padding: 18px;
     color: #A9A9A9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .profile_box {
@@ -72,6 +82,7 @@ li {
   float: left;
   width: 100%;
   margin-bottom: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -80,7 +91,11 @@ li {
 }
 
 body {
-  background-color: #CAEBF2;
+  background-color: #fff;
+  background-image:
+  linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+  linear-gradient(#c9e7ec .1em, transparent .1em);
+  background-size: 100% 1.2em;
 }
 
 .btn-default {
