@@ -41,6 +41,9 @@ def post_new(request):
 
 def post_edit(request, pk):
     post = get_object_or_404(Post, pk=pk)
+    if (post.author != request.user):
+        return redirect('post_list')
+        
     if request.method == "POST":
         form = PostForm(request.POST, instance=post)
         if form.is_valid():
@@ -51,7 +54,14 @@ def post_edit(request, pk):
             return redirect('post_list')
     else:
         form = PostForm(instance=post)
+
     return render(request, 'blog/post_edit.html', {'form': form})
+
+def post_remove(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    if (post.author == request.user):
+        post.delete()
+    return redirect('post_list')
 
 def signup(request):
     if request.method == 'POST':

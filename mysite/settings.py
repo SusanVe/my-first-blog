@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['127.0.0.1', 's168843.pythonanywhere.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'blog',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'blog',
+
 ]
 
 MIDDLEWARE = [
